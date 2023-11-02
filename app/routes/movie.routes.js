@@ -11,8 +11,8 @@ const {
   deleteMovieController,
 } = require("../controllers/movie.controller");
 
-// // READ
-// router.get("/", getAllMoviesController);
+// READ
+router.get("/", getAllMoviesController);
 
 // CREATE
 router.post("/", validate(movieSchema), addMovieController);
